@@ -1,0 +1,14 @@
+{
+    "name": "storage-service",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2",
+        "kafkajs": "^2.2.4",
+        "mongodb": "^6.16.0",
+        "mongoose": "^7.4.3"
+    }
+}

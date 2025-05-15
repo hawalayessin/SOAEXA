@@ -1,0 +1,21 @@
+{
+    "name": "api-gateway",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@graphql-tools/schema": "^10.0.23",
+        "@grpc/grpc-js": "^1.13.3",
+        "@grpc/proto-loader": "^0.7.15",
+        "apollo-server-express": "^3.13.0",
+        "axios": "^1.9.0",
+        "express": "^4.21.2",
+        "graphql": "^16.11.0",
+        "graphql-type-json": "^0.3.2",
+        "kafkajs": "^2.2.4",
+        "node-fetch": "^3.3.2",
+        "path": "^0.12.7"
+    }
+}

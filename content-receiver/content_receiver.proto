@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package transactionreceiver;
+
+service TransactionReceiver {
+  rpc ProcessTransaction (TransactionRequest) returns (TransactionResponse);
+}
+
+message TransactionRequest {
+  string transaction_id = 1;
+  string client_id = 2;
+  double montant = 3;
+  string produit = 4;
+  string type_paiement = 5;
+  string lieu = 6;
+  string date = 7;
+  map<string, string> metadata = 8;  // Pour des informations supplémentaires
+}
+
+message TransactionResponse {
+  string status = 1;
+  string transaction_id = 2;
+  string message = 3;
+  repeated string classifications = 4;  // Les classifications attribuées
+  string processed_at = 5;
+}
